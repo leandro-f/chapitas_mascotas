@@ -8,7 +8,7 @@
 body{ 
     max-width: 425px;
     height: 100%;
-    
+    margin-top: 50px;
     background-color:#5CC6D0;
 }
 a{
@@ -18,16 +18,16 @@ a{
 
 
 .cont_img {
-    width: 100px;
-    height: 100px;
-    margin-left: 40%;
+    width: 150px;
+    height: 150px;
+    margin-left: 33%;
     margin-top: 10px;
 
 }
 .cont_img img{
     width: 100%;
     height: 100%;
-    border-radius: 50px
+    border-radius: 70px
 }
 
 .cont_info{
@@ -44,9 +44,11 @@ a{
 .info_info{
     text-align: center;
     font-family: 'Libre Bodoni', serif;
-font-family: 'Roboto Slab', serif;
+    font-family: 'Roboto Slab', serif;
 }
-
+.info_info p{
+    font-size: 20px;
+}
 .botones {
     display: flex;
     flex-direction: column;
@@ -88,4 +90,9 @@ font-family: 'Roboto Slab', serif;
 .logo1 img{
     width: 70px;
     height: 70px;
+  }
+
+  .logo2{
+    width: 40px;
+    height: 40px;
   }
