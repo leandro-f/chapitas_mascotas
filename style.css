@@ -1,135 +1,179 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration: none;
-   
 }
-body{ 
+
+body { 
+    font-family: 'Roboto', sans-serif;
+    background-color: #F0F2AE;
     max-width: 425px;
-    height: 100%;
-    margin-top: 50px;
-    background-color:#66e84f;
-}
-a{
-    text-decoration: none;
-    color: inherit;
+    margin: 0 auto;
+    font-size: 20px; 
+    font-family: Quador Regular ;
 }
 
-.cont_card{
-    border: 3px solid black;
-    background-color: #e46666;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   margin: auto;
-   width: 100vh;
-   height: auto;
-   gap: 10px;
-}
-.sub_card{
-    background-color: #458dec;
-    width: 30%;
+.contenedor-tarjetas {
     display: flex;
-    flex-direction: column;
-}
-.card_img {
-    width: 70%;
-    margin: auto;
-}
-.card_img img{
-    width: 100%;
-    height: 100%;
-}
-
-
-.info_title h1{
-    font-family: 'Poppins', sans-serif;
-}
-
-
-.cont_img {
-    width: 150px;
-    height: 150px;
-    margin-left: 33%;
-    margin-top: 10px;
-    margin: auto;
-
-}
-.cont_img img{
-    width: 100%;
-    height: 100%;
-    border-radius: 70px
-}
-
-.cont_info{
-    width: 100%;
-    margin-top: 10px;
-    /* border: 1px solid red; */
-    border: 2px solid black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
     gap: 20px;
-    padding: 10px;
 }
 
-.info_info{
-    text-align: center;
-   
-    color: #000000;
-   
-}
-.info_info p{
-    font-size: 20px;
-    font-family: 'Roboto';
-    font-family: 'Roboto Slab';
-}
-.botones {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    margin-top: 30px;
-}
-.location-button {
-    display: flex;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #458dec;
-    border: none;
+.tarjeta {
+    width: calc(50% - 10px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     border-radius: 10px;
-    font-size: 16px;
-    color: #333;
-    width: 90%;
-    margin-left: 5%;
-  }
-  
-  .logo {
-    width: 40PX;
-    height: 40PX;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-  }
-  
-  .button-text {
+.imagen-tarjeta img {
+    width: 100%;
+    height: auto;
+}
+
+.tarjeta button {
+    margin: 10px 0;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+
+.profile-image img {
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    display: block;
+    margin: auto;
+}
+
+.pet-info {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.pet-name {
+    color: #4a4a4a;
+    font-weight: 500;
+}
+
+.owner-info,
+.address-info,
+.contact-info {
+    color: #666;
+    font-weight: 400;
+}
+
+.buttons a {
+    display: block;
+    background-color: #458dec;
+    color: #fff;
     text-align: center;
-   margin-left: 30%;
-   color: azure;
-  }
+    padding: 12px;
+    border-radius: 8px;
+    margin: 10px auto;
+    width: 85%;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
 
-.content_redes{
+.btn-primary, .btn-outline-primary {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
-    margin-top: 30px;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 10px;
+    margin: 10px auto;
+    width: 90%;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    background-color: #458dec;
+    color: white;
 }
-.logo1 img{
-    width: 70px;
-    height: 70px;
-  }
 
-  .logo2{
-    width: 40px;
-    height: 40px;
-  }
+.btn-primary img, .btn-outline-primary img {
+    background-color: #458dec;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.social-media {
+    margin-top: 30px;
+    padding-bottom: 20px;
+}
+
+.social-media a {
+    color: #333;
+    margin: 0 10px;
+}
+
+.social-media a:hover {
+    color: #777;
+}
+
+.social-media .logo {
+    width: 50px;
+    height: auto;
+}
+
+.btn-contact, .btn-medical {
+    background-color: #458dec;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.btn-contact img, .btn-medical img {
+    width: 30px;
+    height: 30px;
+}
+
+.social-media .social-link {
+    border: none;
+    background-color: transparent;
+}
+
+.social-media .social-link img {
+    width: 50px;
+    height: 50px;
+}
+
+.card {
+    background-color:#94d6ca; 
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    border-radius: 15px;
+    overflow: hidden;
+}
+.card-img-top {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.btn {
+    padding: 15px 25px;
+    font-size: 1rem;
+}
+
+.btn img {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
